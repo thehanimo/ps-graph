@@ -346,11 +346,13 @@ export default class Graph {
     }
   }
   linkAll() {
-    this.treeData[0].linked = true;
-    this.treeData[0].children[0].linked = true;
-    this.treeData[0].children[1].linked = true;
-    this.joined = true;
-    var root = this.findRoot(this.treeData);
-    this.update(root);
+    if (!this.joined) {
+      this.treeData[0].linked = true;
+      this.treeData[0].children[0].linked = true;
+      this.treeData[0].children[1].linked = true;
+      this.joined = true;
+      var root = this.findRoot(this.treeData);
+      this.update(root);
+    }
   }
 }
