@@ -1,0 +1,85 @@
+
+  .node text {
+    font: 12px arial;
+  }
+  
+  .link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 2px;
+  }
+  div.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 120px;
+    height: 30px;
+    padding: 2px;
+    font: 12px sans-serif;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 2px 10px;
+    border: 0px;
+    line-height: 35px;
+    font-size: 20px;
+    border-radius: 5px;
+    text-align: left;
+    display: none;
+  }
+  div.tooltip > i {
+    margin-left: 10px;
+    margin-right: 7px;
+    color:  #498bd6;
+    cursor: pointer;
+  }
+  div.tooltip > i:hover{
+    color: #1562bc;
+  }
+  div.joinTooltip > i {
+    color: #498bd6;
+    cursor: pointer;
+  }
+  div.joinTooltip > i:hover{
+    color: #1562bc;
+  }
+  div.tooltip > div {
+    position: absolute;
+  }
+  .toptooltip{
+    font-size: 12px;
+    margin-left: 10px;
+    cursor: pointer;
+    color: rgb(196, 196, 196);
+  }
+  .toptooltip:hover{
+    color: rgb(136, 136, 136);
+  }
+  
+  .sidebarWrapper{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .sidebar{
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 250px;
+    background-color:white;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    z-index: 3;
+    padding: 20px;
+  }
+  .graphOverlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color:none;
+    z-index: 2; 
+    display: none;
+  }
+  

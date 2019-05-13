@@ -1,17 +1,13 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import Graph from "./graph";
+import Graph from "./Components/Graph/Graph.jsx";
 
 class App extends Component {
   render() {
-    return <div className="App" />;
+    return <div className="App">
+    <Graph width={'50%'} height={'50vh'}/>
+    </div>;
   }
-  componentDidMount = () => {
-    var graph = new Graph();
-    var root = graph.findRoot(graph.treeData);
-    graph.update(root);
-  };
 }
 
 export default App;
